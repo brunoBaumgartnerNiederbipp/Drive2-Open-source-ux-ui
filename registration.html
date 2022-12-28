@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backgroundSecondery.css">
+
+    <title>Anmeldung</title>
+   
+</head>
+<body>
+   
+        <!--Logo-->
+<div class="divLogo">
+    <img src="./img/logo.png">
+    </div>
+  <!--Eingabefeld für Geburtsdatum-->
+    <fieldset>
+        <form>
+            <label for="date">Gib zum Anmelden hier dein Geburtsdatum an!</label>
+            <div class="flex">
+            <input type="date" name="Geburtsdatum"  size="30" maxlength="40">
+            </div>
+                        <!--the swich of the swiches
+ here is were the main button live-->   
+   
+ <label for="checkbox">Absenden</label>
+ 
+ <div style="text-align: center;margin-top:4%">
+    <div class="switch">
+        <input type="checkbox" id="switch30" class="switch-check" onclick="newDoc()">
+        <label for="switch30" class="switch-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+    
+    </div></form>
+                
+    </fieldset>
+    
+<!--footer display: none;--> 
+<footer>
+   <script>
+
+function newDoc() {
+              window.location.assign("./registration1.html")
+            }
+
+   </script>
+        </footer>
+</body>
+</html>

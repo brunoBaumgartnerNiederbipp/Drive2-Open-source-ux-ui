@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backgroundSecondery.css">
+    <title>Anmeldung3</title>
+
+</head>
+
+<body>
+    
+
+        <!--Logo-->
+        <div class="divLogo">
+            <img src="./img/logo.png">
+        </div>
+      <!--Eingabefeld für
+            E-Mailadresse
+            Password
+            Wiederholen-->
+        <fieldset>
+            <form>
+<Label>Geben Sie zum Anmelden Ihre E-Mailadresse und Ihr Passwort ein!</Label>
+               
+                <div>
+                    <p for="E-Mail">E- Mailadresse</p>
+                    <input type="text" name="einName" size="30" maxlength="40">
+                </div>
+                
+                    <form action="/action_page.php">
+                        <p for="psw">Passwort</p>
+                        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        
+                      <p for="psw">Passwort wiederholen</p>
+                    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    
+                  
+                   <!--Absende Button--> 
+                               <!--the swich of the swiches
+ here is were the main button live-->   
+   
+ <label for="checkbox">Absenden</label>
+ 
+ <div style="text-align: center;margin-top:4%">
+    <div class="switch">
+        <input type="checkbox" id="switch60" class="switch-check" onclick="newDoc()">
+        <label for="switch60" class="switch-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+    
+    </div>
+                      
+            </form>
+
+        </fieldset>
+
+      
+</body>
+<!--Footer display: none;-->
+<footer>
+    <script>
+     
+function newDoc() {
+    window.location.assign("./login.html")
+  }
+
+</script>
+<script src="./script/passwortValidation.js"></script>
+</footer>
+
+
+</html>

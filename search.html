@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backgroundPrimery.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Search</title>
+</head>
+
+<body>
+    
+        <!--Logo-->
+       
+
+           <!--Geolocationsswich-->   
+        <label class="label-check" for="checkbox">Geolocation</label>
+
+        <!--the swich of the swiches
+        here is were the main button live-->   
+        <div style="text-align: center;margin-top:4%">
+        <div class="switch">
+            <input type="checkbox" id="switch0" class="switch-check">
+            <label for="switch0" class="switch-label">
+                Check
+                <span></span>
+            </label>
+        </div>
+        <br><br>
+        
+        </div>
+        
+        <div class="flex">
+            
+            
+            <div style="text-align: center;margin-top:4%">
+                
+          
+            <fieldset class="fieldsetSearchNeu">
+            <form>
+                <div>
+                    <h3>Suchen Sie eine regelmässige oder einmalige Fahrt?</h3>
+                </div>
+                  
+                <label class="label-check" for="checkbox">Regelmassig</label>
+
+<!--the swich of the swiches
+here is were the main button live-->   
+<div class="swich-hight" style="text-align: center;margin-top:4%">
+<div class="switch">
+    <input type="checkbox" id="switch1" class="switch-check" onclick="newDoc1()">
+    <label for="switch1" class="switch-label">
+        Check
+        <span></span>
+    </label>
+</div>
+<br><br>
+
+</div>
+
+                  
+<label class="label-check" for="checkbox">Einmalig</label>      
+
+<div class="swich-hight" style="text-align: center;margin-top:4%">
+    <div class="einmalig">
+        <input type="checkbox" id="switch2" class="einmalig-check">
+        <label for="switch2" class="einmalig-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+   
+    </div>
+    
+    <div>
+                <h3>Suchen Sie eine Private oder Bezahlte Fahrt?</h3>
+            </div> 
+                <label class="label-check" for="checkbox">Taxi</label>   
+          
+<div class="swich-hight" style="text-align: center;margin-top:4%">
+    <div class="taxi">
+        <input type="checkbox" id="switch3" class="taxi-check">
+        <label for="switch3" class="taxi-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+   
+    </div>
+
+                    
+            
+                <label class="label-check" for="checkbox">Bus</label>  
+              
+               
+      
+<div class="swich-hight" style="text-align: center;margin-top:4%">
+    <div class="bus">
+        <input type="checkbox" id="switch4" class="bus-check">
+        <label for="switch4" class="bus-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+
+    </div>
+                <label class="label-check" for="checkbox">Privat</label>
+                <div class="flex1">
+                         
+       
+<div class="swich-hight" style="text-align: center;margin-top:4%">
+    <div class="privat">
+        <input type="checkbox" id="switch5" class="privat-check">
+        <label for="switch5" class="privat-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br></div>
+                <h3>Geben Sie hier das Abfahrtsdatum und die Abfahrtszeit ein!</h3>
+                <label class="label-check1" for="date">Abfahrtsdatum</label>
+                <div class="flex1">
+                    <input type="date" name="einName" size="30" maxlength="40">
+                </div>
+                <label class="label-check1" for="time">Abfahrtseit</label>
+                <div class="flex1">
+                    <input type="time" name="einName" size="30" maxlength="40">
+                </div>
+                
+                <label class="label-check1" for="text">Abfahrtsort</label>
+                <input type="text" name="einName" size="25" maxlength="20">
+                <label class="label-check1" for="text">Zielort</label>
+                <input type="text" name="einName" size="25" maxlength="20">
+               
+                <h3>Geben Sie hier Ihren Abfahrtsort und Ihr Ziel ein!</h3>
+ <!--Absenden Button
+    dieser button steuert das Formular!
+    Formular einlesen, Speichern, Bearbeiten
+    Fahrten Neu////// Fahrten Suchen
+-->   
+ <label for="checkbox">Absenden</label>
+
+ <!--the swich of the swiches
+ here is were the main button live-->   
+ <div class="swich-hight" style="text-align: center;margin-top:4%">
+ <div class="switch">
+     <input type="checkbox" id="switch6" class="switch-check" onclick="newDoc()">
+     <label for="switch6" class="switch-label">
+         Check
+         <span></span>
+     </label>
+ </div>
+ <br><br>
+ 
+ </div>
+            </form>
+        
+        </fieldset>
+
+        </div>
+
+
+
+
+
+
+  
+
+    <footer>
+      
+        <script>
+
+            function newDoc() {
+                          window.location.assign("./start.html")
+                        }
+             function newDoc1() {
+                          window.location.assign("./regelmässig.html")
+            }
+            
+               </script>
+    </footer>
+</body>
+
+</html>

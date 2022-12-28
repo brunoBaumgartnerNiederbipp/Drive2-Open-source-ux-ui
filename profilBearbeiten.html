@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/backgroundPrimery.css">
+
+    <title>Register</title>
+   
+</head>
+<body>
+    
+        <!--Logo-->
+<div class="divLogo">
+    <img src="./img/logo.png" href="./start.html">
+    </div>
+  
+    <a href="loschen.html">Profil Löschen</a>
+  
+
+        <h3>Upload einen Hintergrund und ein Profilbild!</h3>
+        <!--the swich of the swiches
+ here is were the main button live-->   
+
+   
+ <label for="checkbox">Hintergrund</label>
+ 
+ <div style="text-align: center;margin-top:4%">
+    <div class="switch">
+        <input type="checkbox" id="switch24" class="switch-check" onclick="newDoc1()">
+        <label for="switch24" class="switch-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+    
+    </div>
+                </div>
+               
+        <!--the swich of the swiches
+ here is were the main button live-->   
+
+   
+ <label for="checkbox">Profilbild</label>
+ 
+ <div style="text-align: center;margin-top:4%">
+    <div class="switch">
+        <input type="checkbox" id="switch25" class="switch-check" onclick="newDoc1()">
+        <label for="switch25" class="switch-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+    
+    </div>
+                </div>
+        
+     <fieldset>
+        <form>
+            <div> 
+                <label for="text">Username</label>
+                <input type="text" name="einName" size="25" maxlength="20" placeholder="Username">
+                </div>
+           
+            <div>
+                <label for="date">Geburtsdatum</label>
+            <input type="date" name="einName"  size="30" maxlength="40" placeholder="Geburtsdatum">
+            </div>
+            
+                    
+                 
+           
+           
+         
+            <div > 
+                <label for="text">Wohnort</label>
+            <input type="text" name="einName" size="25" maxlength="20" placeholder="Wohnort">
+            </div>
+       <div>
+                                    <select>
+                                        <option>Single</option>
+                                        <option>Verheiratet</option>
+                                        <option>Verlobt</option>
+                                        <option>Verwitwet</option>
+                                      </select>
+                        
+       </div>    
+                                
+                               <!--the swich of the swiches
+ here is were the main button live-->   
+
+   
+ <label for="checkbox">Absenden</label>
+ 
+ <div style="text-align: center;margin-top:4%">
+    <div class="switch">
+        <input type="checkbox" id="switch26" class="switch-check" onclick="newDoc1()">
+        <label for="switch26" class="switch-label">
+            Check
+            <span></span>
+        </label>
+    </div>
+    <br><br>
+    
+    </div>
+                </div>
+               
+                            </form>     
+            </fieldset>          
+
+   
+
+<!--Footer display: none;-->
+<footer>
+    <script>
+
+        function newDoc() {
+                      window.location.assign("./profil.html")
+                    }
+        
+           </script>
+        </footer>
+</body>
+</html>
